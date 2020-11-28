@@ -19,7 +19,38 @@ Abdul Rozak Baharudin 05111840000148
 	- [Soal 10](#soal-10)
  	- [Soal 11](#soal-11)
 	- [Soal 12](#soal-12)
+	- [Soal 13](#soal-13)
 	
+## Soal 1
+* Setting ```nano topologi.sh``` seperti pada gambar
+![1-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/1-1.jpg)
+* jangan lupa untuk menambahkan halt untuk uml yang ada pada topologi.sh
+
+## Soal 2
+* pada UML TUBAN setting ```nano /etc/default/isc-dhcp-server``` dengan menambahkan ```INTERFACESv4="eth0"```
+
+## Soal 3
+* pada UML TUBAN ```nano /etc/dhcp/dhcpd.conf``` lalu tambahkan untuk subnet 1 seperti pada gambar
+![3-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/3-1.jpg)
+* ```range 192.168.0.10 192.168.0.100; range 192.168.0.110 192.168.0.200;```
+
+## Soal 4
+* pada ```nano /etc/dhcp/dhcpd.conf``` ditambahkan untuk subnet 3 seperti pada gambar
+![4-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/4-1.jpg)
+* ```range 192.168.1.50 192.168.0.70;```
+
+## Soal 5
+* pada UML client di file ```nano /etc/resolv.conf``` ditambahkan ```nameserver "IP_MALANG"``` dan ```nameserver 202.46.129.2```
+
+## Soal 6
+* pada UML TUBAN ```nano /etc/dhcp/dhcpd.conf``` dan tambahkan ```default-lease-time 300;```
+ dan ```max-lease-time 300;``` pada subnet 192.168.0.0 atau subnet 1
+![6-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/6-1.jpg)
+## Soal 7
+* pada UML TUBAN ```nano /etc/dhcp/dhcpd.conf``` dan tambahkan ```default-lease-time 600;```
+ dan ```max-lease-time 600;``` pada subnet 192.168.1.0 atau subnet 3
+![7-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/7-1.jpg)
+
 ## Soal 8
 * Install squid3 pada UML MOJOKERTO ```apt-get install squid3```
 * Install apache2-utils pada UML MOJOKERTO ```apt-get install apache2-utils```
@@ -52,7 +83,7 @@ acl AVAILABLE_2 time WHF 00:00-09:00
 ```
 * Restart squid dengan cara mengetikkan perintah ```service squid3 restart```
 
-## Soal 10
+## Soal 11
 * Buka ```nano /etc/squid3/squid.conf``` pada UML MOJOKERTO lalu tambahkan konfigurasi berikut :
 ```
 acl roket dstdomain .google.com
@@ -64,6 +95,10 @@ http_reply_access deby roket
 <img width="361" alt="squid" src="https://user-images.githubusercontent.com/57948206/100496896-6f733080-318a-11eb-9b62-b58247be71f5.PNG">
 
 ## Soal 12
+* buka UML MOJOKERTO dan pindah ke directory ```cd /usr/share/squid3/errors/English``` dan wget ```wget 10.151.36.202/ERR_ACCESS_DENIED``` lalu coba buka pada browser
+![12-1](https://github.com/kanarekha/Jarkom_A10_Modul3/blob/main/img/12-1.jpg)
+
+## Soal 13
 * Install aplikasi bind9 pada UML MALANG dengan perintah ```apt-get install bind9 -y```
 * Buka ```nano /etc/bind/named.conf.local``` . Edit konfigurasi sebagai berikut :
 

@@ -41,11 +41,11 @@ http_access allow USERS
 ```
 * Restart squid dengan cara mengetikkan perintah ```service squid3 restart```
 ## Soal 9
-* Buka ```nano /etc/squid3/squid.conf``` lalu tambahkan konfigurasi ```acl AVAILABLE time TW 13:00-18:00```
+* Buka ```nano /etc/squid3/squid.conf```pada UML MOJOKERTO lalu tambahkan konfigurasi ```acl AVAILABLE time TW 13:00-18:00```
 * Restart squid dengan cara mengetikkan perintah ```service squid3 restart```
 
 ## Soal 10
-* Buka ```nano /etc/squid3/squid.conf``` lalu tambahkan konfigurasi berikut :
+* Buka ```nano /etc/squid3/squid.conf``` pada UML MOJOKERTO lalu tambahkan konfigurasi berikut :
 ```
 acl AVAILABLE_1 time TWH 21:00-23:59
 acl AVAILABLE_2 time WHF 00:00-09:00
@@ -53,18 +53,18 @@ acl AVAILABLE_2 time WHF 00:00-09:00
 * Restart squid dengan cara mengetikkan perintah ```service squid3 restart```
 
 ## Soal 10
-* Buka ```nano /etc/squid3/squid.conf``` lalu tambahkan konfigurasi berikut :
+* Buka ```nano /etc/squid3/squid.conf``` pada UML MOJOKERTO lalu tambahkan konfigurasi berikut :
 ```
 acl roket dstdomain .google.com
 deny_info http://monta.if.its.ac.id roket
-http_reply_access allow users
+http_reply_access deby roket
 ```
 * Restart squid dengan cara mengetikkan perintah ```service squid3 restart```
 
 <img width="361" alt="squid" src="https://user-images.githubusercontent.com/57948206/100496896-6f733080-318a-11eb-9b62-b58247be71f5.PNG">
 
 ## Soal 12
-* Install aplikasi bind9 pada MALANG dengan perintah ```apt-get install bind9 -y```
+* Install aplikasi bind9 pada UML MALANG dengan perintah ```apt-get install bind9 -y```
 * Buka ```nano /etc/bind/named.conf.local``` . Edit konfigurasi sebagai berikut :
 
 <img width="363" alt="conf" src="https://user-images.githubusercontent.com/57948206/100496892-6d10d680-318a-11eb-98e0-af766be93bfc.PNG">

@@ -1,4 +1,4 @@
-# Jarkom_A10_Modul3
+# Jarkom_A10_LapresModul3
 
 Anggota :
 
@@ -69,9 +69,9 @@ http_reply_access deby roket
 
 <img width="363" alt="conf" src="https://user-images.githubusercontent.com/57948206/100496892-6d10d680-318a-11eb-98e0-af766be93bfc.PNG">
 
-* Buat folder jarkom di dalam /etc/bind mkdir /etc/bind/jarkom
+* Buat folder jarkom di dalam /etc/bind dengan perintah ```mkdir /etc/bind/jarkom```
 * Copykan file db.local ke dalam folder janganlupa-ta.a10.pw dengan perintah ```cp /etc/bind/db.local /etc/bind/jarkom/janganlupa-ta.a10.pw```
-* Buka file ```nano /etc/bind/jarkom/janganlupa-ta.e09.pw``` dan edit konfigurasi sebagai berikut :
+* Buka file ```nano /etc/bind/jarkom/janganlupa-ta.a10.pw``` dan edit konfigurasi sebagai berikut :
 
 <img width="364" alt="jarkom jangan" src="https://user-images.githubusercontent.com/57948206/100496894-6e420380-318a-11eb-9138-1891fda1ee64.PNG">
  
